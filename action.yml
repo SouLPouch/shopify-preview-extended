@@ -31,7 +31,6 @@ runs:
         issue-number: ${{ github.event.pull_request.number }}
         body: 'Initialisation'
         shell: 'bash'
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
     - name: Check outputs
       run: |
         echo "Comment ID - ${{ steps.preview_comment.outputs.comment-id }}"
